@@ -1,7 +1,97 @@
 
 @import '../scss/nullstyle.scss';
-///////////////
-div{
-    padding: 10px;
-    color: red;
+
+@font-face {
+    font-family: 'Inter';
+    src: url('Inter-Bold.woff') format('woff');
+    src: url('Inter-Bold.woff2') format('woff2');
+    src: url('Inter-Medium.woff') format('woff');
+    src: url('Inter-Medium.woff2') format('woff2');
+}
+
+body {
+    color: rgb(0, 0, 0);
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+}
+.container {
+    max-width: 1220px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+.header {
+    min-height: 100vh;
+    position: relative;
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 40px 0;
+    }
+    &__content{
+        padding-bottom: 50px;
+        &-images{
+            text-align: center;
+        &::before{
+            content: '';
+            position: absolute;
+            top:0;
+            left:0;
+            right:0;
+            bottom:0;
+            width:100%;
+            z-index: -2;
+                background: linear-gradient(180deg, #CADBEB 0%, rgba(235, 235, 235, 0.00) 100%);
+        }
+        }
+    }
+}
+.menu{
+    &__list{
+        display: flex;
+        align-items: center;
+        gap: 0 40px;
+        font-weight: 700;
+    }
+    &__btn{
+        padding: 15px 58px;
+        border-radius: 30px;
+        background-color: #000;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+    }
+}
+.title{
+    font-size: 210px;
+    font-weight: 700;
+    position: absolute;
+    padding-top: 110px;
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    &--air{
+        transform: translateY(25px);
+    }
+    &--pod{
+        position: relative;
+        z-index: -1;
+        transform: translateY(25px);
+    }
+    &--s{
+        display: inline-block;
+        transform: translateY(78px);
+    }
+    &--m{
+        display: inline-block;
+        transform: translate(-30px, 303px);
+    }
+    &--ax{
+        display: inline-block;
+        transform: translate(-100px, 440px);
+        z-index: -1;
+        position: relative;
+    }
 }
