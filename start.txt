@@ -1,0 +1,3 @@
+download packages - $npm i
+start working - $gulp
+build project - $gulp build
