@@ -13,13 +13,13 @@ body {
     font-family: "Inter", sans-serif;
     font-size: 1em;
     font-weight: 700;
+    line-height: 1.2;
 }
 .container {
     max-width: 1220px;
     padding: 0 10px;
     margin: 0 auto;
 }
-
 .header {
     max-height: 100vh;
     min-height: 1080px;
@@ -120,5 +120,38 @@ body {
         border-radius: 20px;
         border: 1px solid #777;
         padding: 50px 55px;
+    }
+}
+.main__title {
+    margin: auto;
+    text-align: center;
+    font-size: 64px;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.composition {
+    margin-bottom: 180px;
+    &__text {
+        margin: auto;
+        text-align: center;
+        max-width: 655px;
+        font-weight: 500;
+        margin-bottom: 40px;
+    }
+    &__flex {
+        display: flex;
+        justify-content: center;
+        gap: 0 150px;
+        font-weight: 500;
+    }
+    &__flex-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 230px;
+        gap: 15px;
+    }
+    &__flex-right {
     }
 }
