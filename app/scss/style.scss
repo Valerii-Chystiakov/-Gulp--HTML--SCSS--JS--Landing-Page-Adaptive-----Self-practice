@@ -125,7 +125,7 @@ body {
 .main__title {
     margin: auto;
     text-align: center;
-    font-size: 64px;
+    font-size: 4rem;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -152,6 +152,39 @@ body {
         width: 230px;
         gap: 15px;
     }
-    &__flex-right {
+}
+.case {
+    background-color: #fafafa;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    &__text {
+        text-align: center;
+        font-weight: 500;
+        margin: 0 auto;
+        margin-top: 15px;
+        margin-bottom: 40px;
+    }
+    &__image {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+    }
+}
+.alive {
+    background-color: #fafafa;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    &__subtitle {
+        font-size: 13.125rem;
+        margin-top: 40px;
+        margin-bottom: 40px;
+        font-weight: 700;
+        text-align: center;
+    }
+    &__text {
+        font-weight: 500;
+        text-align: center;
+        width: 390px;
+        margin: 0 auto;
     }
 }
