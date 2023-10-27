@@ -184,7 +184,7 @@ body {
     &__text {
         font-weight: 500;
         text-align: center;
-        width: 390px;
+        max-width: 390px;
         margin: 0 auto;
     }
 }
@@ -261,8 +261,9 @@ body {
         padding-top: 80px;
         padding-bottom: 40px;
         display: flex;
+        flex-wrap: wrap;
         justify-content: center;
-        gap: 0 20px;
+        gap: 20px;
     }
 
     &__item {
@@ -272,5 +273,76 @@ body {
         margin: 0 auto;
         width: fit-content;
         width: -moz-fit-content;
+    }
+}
+
+@media (max-width: 1200px) {
+    .choose-color {
+        &__list {
+            flex-wrap: wrap;
+            gap: 40px;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .main__title {
+        font-size: 3rem;
+    }
+    html {
+        font-size: 14px;
+    }
+    .choose-color {
+        padding-bottom: 60px;
+        &__list {
+            gap: 16px;
+        }
+    }
+    .composition {
+        margin-bottom: 60px;
+        &__flex {
+            gap: 80px;
+        }
+    }
+    .case {
+        padding: 60px 0;
+    }
+    .alive {
+        padding-top: 0;
+        padding-bottom: 40px;
+        &__subtitle {
+            margin: 0px auto;
+            font-size: 11rem;
+        }
+    }
+}
+
+@media (max-width: 560px) {
+    .choose-color {
+        margin-bottom: 40px;
+        &__text {
+            margin-bottom: 40px;
+        }
+    }
+    .composition__flex {
+        flex-wrap: wrap;
+        &-left {
+            width: 300px;
+            text-align: center;
+        }
+    }
+    .case {
+        padding: 40px 0;
+    }
+    .alive__subtitle {
+        font-size: 10rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .case__image {
+        img {
+            max-width: 100%;
+        }
     }
 }
