@@ -195,43 +195,42 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
-    padding-top: 680px;
-    &__box {
-        padding-top: 450px;
-        display: flex;
-        justify-content: center;
-        padding-bottom: 310px;
-        &::after {
-            content: "";
-            position: absolute;
-            background-image: url("/images/audio_sound.png");
-            background-repeat: no-repeat;
-            background-position: bottom center;
-            background-size: cover;
-            bottom: -250px;
-            width: 100%;
-            left: 0;
-            right: 0;
-            height: 140vh;
-        }
+    z-index: -2;
+    &::after {
+        content: "";
+        z-index: -1;
+        position: absolute;
+        background-image: url("/images/audio_sound.png");
+        background-repeat: no-repeat;
+        background-position: bottom center;
+        background-size: cover;
+        bottom: -20vh;
+        width: 100%;
+        left: 0;
+        right: 0;
+        height: 140vh;
     }
     &__inner {
         display: flex;
-        justify-content: center;
-        flex-direction: column;
-        max-width: 288px;
-        gap: 40px;
+        flex-flow: column wrap;
+        justify-content: flex-end;
+        min-height: 180vh;
+        align-items: center;
+    }
+    &__box {
+        text-align: center;
+        padding-bottom: 40vh;
     }
     &__text {
         color: #fff;
         text-align: center;
         font-weight: 500;
         line-height: 130%;
+        width: 300px;
+        margin-bottom: 15px;
     }
     &__btn {
-        margin: 0 auto;
-        width: fit-content;
-        width: -moz-fit-content;
+        margin-top: 10px;
         padding: 15px 58px;
         border-radius: 30px;
         background: #fff;
@@ -241,7 +240,9 @@ body {
 }
 
 .footer {
-    padding-top: 250px;
+    position: relative;
+    z-index: -10;
+    padding-top: 20vh;
     background-color: #000;
     color: #fff;
     &__contact {
