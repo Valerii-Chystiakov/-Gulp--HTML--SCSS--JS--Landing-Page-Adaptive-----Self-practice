@@ -86,7 +86,8 @@ body {
     }
     &--m {
         display: inline-block;
-        transform: translate(-30px, 303px);
+        transform: translate(-32px, 291px);
+        z-index: 4;
     }
     &--ax {
         display: inline-block;
@@ -115,6 +116,7 @@ body {
         display: flex;
         gap: 40px;
         justify-content: center;
+        flex-wrap: wrap;
     }
     &__btn {
         border-radius: 20px;
@@ -188,7 +190,6 @@ body {
         margin: 0 auto;
     }
 }
-
 .audio {
     position: relative;
     background-image: url("/images/audioBG.png");
@@ -211,10 +212,10 @@ body {
         height: 140vh;
     }
     &__inner {
+        height: 1445px;
         display: flex;
         flex-flow: column wrap;
         justify-content: flex-end;
-        min-height: 180vh;
         align-items: center;
     }
     &__box {
@@ -238,7 +239,6 @@ body {
         text-transform: uppercase;
     }
 }
-
 .footer {
     position: relative;
     z-index: -10;
@@ -276,15 +276,50 @@ body {
     }
 }
 
-@media (max-width: 1200px) {
-    .choose-color {
-        &__list {
-            flex-wrap: wrap;
-            gap: 40px;
-        }
+@media (max-width: 1469px) {
+    .header__content-images img {
+        max-width: 100%;
+        z-index: 0;
+        position: relative;
+    }
+    .title {
+        font-size: 180px;
+        transform: translate(131px, 15px);
+        z-index: 100;
+    }
+    .audio__inner {
+        min-height: 180vh;
     }
 }
-
+.title-large {
+    display: none;
+}
+@media (max-width: 1349px) {
+    .title {
+        display: none;
+    }
+    .header__content {
+        justify-content: center;
+        display: flex;
+    }
+    .title-large {
+        margin: 0 auto;
+        max-width: 1000px;
+        text-align: center;
+        display: inline-block;
+        font-size: 140px;
+        font-weight: 700;
+        position: absolute;
+        padding-top: 180px;
+        z-index: 10;
+        width: calc(100% - 30px);
+    }
+}
+@media (max-width: 900px) {
+    .header {
+        min-height: 800px;
+    }
+}
 @media (max-width: 768px) {
     .main__title {
         font-size: 3rem;
@@ -315,6 +350,23 @@ body {
             font-size: 11rem;
         }
     }
+    .title-large {
+        font-size: 80px;
+    }
+}
+@media (max-width: 700px) {
+    .title-large {
+        padding-top: 120px;
+    }
+}
+@media (max-width: 600px) {
+    .header {
+        min-height: 0px;
+    }
+}
+
+.burgerMenu {
+    display: none;
 }
 
 @media (max-width: 560px) {
@@ -337,6 +389,57 @@ body {
     .alive__subtitle {
         font-size: 10rem;
     }
+    .header__top {
+        padding: 10px 0px;
+    }
+    .menu__list {
+        padding-top: 50px;
+        background-color: rgb(139, 138, 140);
+        border: #000 solid 1px;
+        border-radius: 0px 0px 0px 25px;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+        z-index: 150;
+        gap: 20px;
+        width: 184px;
+        height: 176px;
+        top: -228px;
+        transition: transform 0.5s;
+    }
+    .menu__link {
+        padding: 10px 30px;
+    }
+    .burgerMenu {
+        z-index: 200;
+        position: relative;
+        display: block;
+        width: 25px;
+        height: 30px;
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        & span {
+            position: inherit;
+            width: 25px;
+            height: 2.5px;
+            background-color: #000;
+            transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+        }
+    }
+    .header.burger-open .burgerMenu span:nth-child(2) {
+        opacity: 0;
+    }
+    .header.burger-open .burgerMenu span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .header.burger-open .burgerMenu span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+    .header.burger-open .menu__list {
+        transform: translateY(100%);
+    }
 }
 
 @media (max-width: 425px) {
@@ -344,5 +447,9 @@ body {
         img {
             max-width: 100%;
         }
+    }
+    .title-large {
+        font-size: 60px;
+        padding-top: 90px;
     }
 }
