@@ -2,7 +2,7 @@
     <div class="container">
         <div class="header__top">
             <a href="#" class="logo">
-                <img src="images/logo.svg" alt="">
+                <img src="images/logo.svg" alt="apple logo">
             </a>
             <nav class="menu">
                 <ul class="menu__list">
@@ -19,7 +19,7 @@
                         <button class="menu__btn">BUY</button>
                 </ul>
             </nav>
-            <button class="burgerMenu">
+            <button aria-label="menu button" class="burgerMenu">
                 <span></span><span></span><span></span>
             </button>
         </div>
@@ -33,11 +33,32 @@
             </h1>
             <h1 class="title-large">AirPodS MAX</h1>
             <div class="header__content-images">
-                <img class="content-item color--blue content-item--active" src="images/airpods blue.png" alt="">
-                <img class="content-item color--black" src="images/airpods black.png" alt="">
-                <img class="content-item color--green" src="images/airpods green.png" alt="">
-                <img class="content-item color--red" src="images/airpods red.png" alt="">
-                <img class="content-item color--white" src="images/airpods white.png" alt="">
+                <picture>
+                    <source type="image/avif" srcset="images/airpods-blue.avif">
+                    <source type="image/webp" srcset="images/airpods-blue.webp">
+                    <img class="content-item color--blue content-item--active" src="images/airpods-blue.png"
+                        alt="airpods-blue">
+                </picture>
+                <picture>
+                    <source type="image/avif" srcset="images/airpods-black.avif">
+                    <source type="image/webp" srcset="images/airpods-black.webp">
+                    <img class="content-item color--black" src="images/airpods-black.png" alt="airpods-black">
+                </picture>
+                <picture>
+                    <source type="image/avif" srcset="images/airpods-green.avif">
+                    <source type="image/webp" srcset="images/airpods-green.webp">
+                    <img class="content-item color--green" src="images/airpods-green.png" alt="airpods-green">
+                </picture>
+                <picture>
+                    <source type="image/avif" srcset="images/airpods-red.avif">
+                    <source type="image/webp" srcset="images/airpods-red.webp">
+                    <img class="content-item color--red" src="images/airpods-red.png" alt="airpods-red">
+                </picture>
+                <picture>
+                    <source type="image/avif" srcset="images/airpods-white.avif">
+                    <source type="image/webp" srcset="images/airpods-white.webp">
+                    <img class="content-item color--white" src="images/airpods-white.png" alt="airpods-white">
+                </picture>
             </div>
         </div>
     </div>

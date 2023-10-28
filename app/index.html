@@ -14,7 +14,7 @@
         <div class="container">
             <div class="header__top">
                 <a href="#" class="logo">
-                    <img src="images/logo.svg" alt="">
+                    <img src="images/logo.svg" alt="apple logo">
                 </a>
                 <nav class="menu">
                     <ul class="menu__list">
@@ -31,7 +31,7 @@
                             <button class="menu__btn">BUY</button>
                     </ul>
                 </nav>
-                <button class="burgerMenu">
+                <button aria-label="menu button" class="burgerMenu">
                     <span></span><span></span><span></span>
                 </button>
             </div>
@@ -45,11 +45,32 @@
                 </h1>
                 <h1 class="title-large">AirPodS MAX</h1>
                 <div class="header__content-images">
-                    <img class="content-item color--blue content-item--active" src="images/airpods blue.png" alt="">
-                    <img class="content-item color--black" src="images/airpods black.png" alt="">
-                    <img class="content-item color--green" src="images/airpods green.png" alt="">
-                    <img class="content-item color--red" src="images/airpods red.png" alt="">
-                    <img class="content-item color--white" src="images/airpods white.png" alt="">
+                    <picture>
+                        <source type="image/avif" srcset="images/airpods-blue.avif">
+                        <source type="image/webp" srcset="images/airpods-blue.webp">
+                        <img class="content-item color--blue content-item--active" src="images/airpods-blue.png"
+                            alt="airpods-blue">
+                    </picture>
+                    <picture>
+                        <source type="image/avif" srcset="images/airpods-black.avif">
+                        <source type="image/webp" srcset="images/airpods-black.webp">
+                        <img class="content-item color--black" src="images/airpods-black.png" alt="airpods-black">
+                    </picture>
+                    <picture>
+                        <source type="image/avif" srcset="images/airpods-green.avif">
+                        <source type="image/webp" srcset="images/airpods-green.webp">
+                        <img class="content-item color--green" src="images/airpods-green.png" alt="airpods-green">
+                    </picture>
+                    <picture>
+                        <source type="image/avif" srcset="images/airpods-red.avif">
+                        <source type="image/webp" srcset="images/airpods-red.webp">
+                        <img class="content-item color--red" src="images/airpods-red.png" alt="airpods-red">
+                    </picture>
+                    <picture>
+                        <source type="image/avif" srcset="images/airpods-white.avif">
+                        <source type="image/webp" srcset="images/airpods-white.webp">
+                        <img class="content-item color--white" src="images/airpods-white.png" alt="airpods-white">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -64,20 +85,45 @@
                 The ultimate personal audio experience.
             </p>
             <div class="choose-color__list">
-                <button class="choose-color__btn" data-button="color--green" type="button"><img src="images/btn-green.png"
-                        alt="">
+                <button aria-label="choose-color silver button" class="choose-color__btn" data-button="color--green"
+                    type="button">
+                    <picture>
+                        <source type="image/avif" srcset="images/btn-green.avif">
+                        <source type="image/webp" srcset="images/btn-green.webp">
+                        <img src="images/btn-green.png" alt="silver">
+                    </picture>
                 </button>
-                <button class="choose-color__btn" data-button="color--white" type="button"><img src="images/btn-white.png"
-                        alt="">
+                <button aria-label="choose-color white button" class="choose-color__btn" data-button="color--white"
+                    type="button">
+                    <picture>
+                        <source type="image/avif" srcset="images/btn-white.avif">
+                        <source type="image/webp" srcset="images/btn-white.webp">
+                        <img src="images/btn-white.png" alt="white">
+                    </picture>
                 </button>
-                <button class="choose-color__btn" data-button="color--red" type="button"><img src="images/btn-red.png"
-                        alt="">
+                <button aria-label="choose-color red button" class="choose-color__btn" data-button="color--red"
+                    type="button">
+                    <picture>
+                        <source type="image/avif" srcset="images/btn-red.avif">
+                        <source type="image/webp" srcset="images/btn-red.webp">
+                        <img src="images/btn-red.png" alt="red">
+                    </picture>
                 </button>
-                <button class="choose-color__btn" data-button="color--black" type="button"><img src="images/btn-black.png"
-                        alt="">
+                <button aria-label="choose-color black button" class="choose-color__btn" data-button="color--black"
+                    type="button">
+                    <picture>
+                        <source type="image/avif" srcset="images/btn-black.avif">
+                        <source type="image/webp" srcset="images/btn-black.webp">
+                        <img src="images/btn-black.png" alt="black">
+                    </picture>
                 </button>
-                <button class="choose-color__btn choose-color__btn--active" data-button="color--blue" type="button"><img
-                        src="images/btn-blue.png" alt="">
+                <button aria-label="choose-color blue button" class="choose-color__btn choose-color__btn--active"
+                    data-button="color--blue" type="button">
+                    <picture>
+                        <source type="image/avif" srcset="images/btn-blue.avif">
+                        <source type="image/webp" srcset="images/btn-blue.webp">
+                        <img src="images/-bbtnlue.png" alt="blue">
+                    </picture>
                 </button>
             </div>
         </div>
@@ -103,11 +149,32 @@
                         isolation.</p>
                 </div>
                 <div class="composition__flex-right">
-                    <img class="content-item color--blue content-item--active" src="images/airpods-side blue.jpg" alt="">
-                    <img class="content-item color--black" src="images/airpods-side black.jpg" alt="">
-                    <img class="content-item color--red" src="images/airpods-side red.jpg" alt="">
-                    <img class="content-item color--green" src="images/airpods-side green.jpg" alt="">
-                    <img class="content-item color--white" src="images/airpods-side white.jpg" alt="">
+                    <picture>
+                        <source type="image/avif" srcset="images/airpods-side-blue.avif">
+                        <source type="image/webp" srcset="images/airpods-side-blue.webp">
+                        <img class="content-item color--blue content-item--active" src="images/airpods-side blue.jpg"
+                            alt="side-blue">
+                    </picture>
+                    <picture>
+                        <source type="image/avif" srcset="images/airpods-side-black.avif">
+                        <source type="image/webp" srcset="images/airpods-side-black.webp">
+                        <img class="content-item color--black" src="images/airpods-side-black.jpg" alt="side-black">
+                    </picture>
+                    <picture>
+                        <source type="image/avif" srcset="images/airpods-side-red.avif">
+                        <source type="image/webp" srcset="images/airpods-side-red.webp">
+                        <img class="content-item color--red" src="images/airpods-side-red.jpg" alt="side-red">
+                    </picture>
+                    <picture>
+                        <source type="image/avif" srcset="images/airpods-side-green.avif">
+                        <source type="image/webp" srcset="images/airpods-side-green.webp">
+                        <img class="content-item color--green" src="images/airpods-side-green.jpg" alt="side-silver">
+                    </picture>
+                    <picture>
+                        <source type="image/avif" srcset="images/airpods-side-white.avif">
+                        <source type="image/webp" srcset="images/airpods-side-white.webp">
+                        <img class="content-item color--white" src="images/airpods-side-white.jpg" alt="">
+                    </picture>
                 </div>
             </div>
         </div>
@@ -122,11 +189,35 @@
                 to save energy.
             </p>
             <div class="case__image">
-                <img class="content-item color--blue content-item--active" src="images/airpods-case blue.jpg"></img>
-                <img class="content-item color--black" src="images/airpods-case black.jpg"></img>
-                <img class="content-item color--green" src="images/airpods-case green.jpg"></img>
-                <img class="content-item color--red" src="images/airpods-case red.jpg"></img>
-                <img class="content-item color--white" src="images/airpods-case white.jpg"></img>
+                <picture>
+                    <source type="image/avif" srcset="images/airpods-case-blue.avif">
+                    <source type="image/webp" srcset="images/airpods-case-blue.webp">
+                    <img alt="airpods-case blue" class="content-item color--blue content-item--active"
+                        src="images/airpods-case-blue.jpg"></img>
+                </picture>
+                <picture>
+                    <source type="image/avif" srcset="images/airpods-case-black.avif">
+                    <source type="image/webp" srcset="images/airpods-case-black.webp">
+                    <img alt="airpods-case black" class="content-item color--black"
+                        src="images/airpods-case-black.jpg"></img>
+                </picture>
+                <picture>
+                    <source type="image/avif" srcset="images/airpods-case-green.avif">
+                    <source type="image/webp" srcset="images/airpods-case-green.webp">
+                    <img alt="airpods-case silver" class="content-item color--green"
+                        src="images/airpods-case-green.jpg"></img>
+                </picture>
+                <picture>
+                    <source type="image/avif" srcset="images/airpods-case-red.avif">
+                    <source type="image/webp" srcset="images/airpods-case-red.webp">
+                    <img alt="airpods-case red" class="content-item color--red" src="images/airpods-case-red.jpg"></img>
+                </picture>
+                <picture>
+                    <source type="image/avif" srcset="images/airpods-case-white.avif">
+                    <source type="image/webp" srcset="images/airpods-case-white.webp">
+                    <img alt="airpods-case white" class="content-item color--white"
+                        src="images/airpods-case-white.jpg"></img>
+                </picture>
             </div>
         </div>
     </section>
@@ -173,7 +264,7 @@
                 <p class="footer__text">
                     Or call <a href="tel:800 207 758">800 207 758</a>
                 </p>
-                <a class="footer__link" href="#"><img src="images/logo_white.svg" alt=""></a>
+                <a class="footer__link" href="#"><img src="images/logo_white.svg" alt="apple logo"></a>
             </div>
             <nav>
                 <ul class="footer__list">
